@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    margin: 10px;
+}
+
+.img {
+    max-width: 600px;
+    height: auto;
+}
+
+.breadcrumb{
+    justify-content: center;
+}
+
+.breadcrumb-item.active {
+    text-align: center;
+}
