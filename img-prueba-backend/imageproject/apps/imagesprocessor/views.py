@@ -25,6 +25,8 @@ class ImageProcessor(APIView):
             return Response(file_serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
     def processing_image(self, image_obj):
+        """ Retorna las dimensiones y  la orientacion recomendada para la imagen cargada.
+        """
 
         image = Image.open(os.path.normpath(settings.BASE_DIR) + image_obj["file"])
         width = image.size[0]
